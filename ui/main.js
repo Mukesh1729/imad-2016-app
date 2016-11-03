@@ -31,4 +31,4 @@ submit.onclick = function(){
     
     //Capture a list of names and render it as a list
     var names = ['name1','name2','name3'];
-}
+};
