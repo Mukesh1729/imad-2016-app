@@ -8,7 +8,6 @@ button.onclick = function () {
 //make the request
 request.open('GET','http://mukesh1729.imad.hasura-app.io/counter',true);
 request.send(null);
-};
 
 //Submit name
 var nameInput=document.getElementById('name');
