@@ -13,6 +13,7 @@ button.onclick = function () {
           if(request.status === 200) {
               //Capture a list of names and render it as a list
                 var counter = request.responseText;
+                counter = counter + 1;
                 var span = document.getElementById('count');
                 span.innerHtml = counter.toString();
           }
