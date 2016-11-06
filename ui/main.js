@@ -2,6 +2,7 @@
 
 var button = document.getElementById('counter');
 var counter = 0;
+
 button.onclick = function () {
     
      // Create a request object
@@ -19,8 +20,10 @@ button.onclick = function () {
                     span.innerHtml = counter.toString();
              }
           }
+          
           //Not done yet
       };
+      
       //Make the request
       request.open('GET','http://mukesh1729.imad.hasura-app.io/counter',true);
       request.send(null);
