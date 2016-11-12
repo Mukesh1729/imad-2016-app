@@ -63,7 +63,7 @@ function carousel() {
 <div id="about">
     <p>Click the button!</p>
 </div>
-<script>
+<!--script>
 function myFunction() {
     var x = document.getElementById('about');
     if (x.style.display === 'none') {
@@ -72,7 +72,19 @@ function myFunction() {
         x.style.display = 'block';
     }
 }
-</script>
+</script-->
 
+<script>
+    
+    var cc=document.getElementByClassName("active1");
+    var i;
+    for(i=0;i<cc.length;i++){
+        acc[i]=onClick=function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+    
+</script>
  </body>
 </html>
