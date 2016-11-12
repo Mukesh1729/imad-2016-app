@@ -1,3 +1,7 @@
 body {
     font-family: sans-serif;
 }
+.active1:hover{
+    color: #ccc;
+    
+}
