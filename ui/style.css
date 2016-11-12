@@ -5,3 +5,7 @@ body {
     color: #ccc;
     
 }
+.navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #ccc;
+}
