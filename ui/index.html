@@ -2,80 +2,31 @@
 <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     </head>
-    
     <body>
-        <div class="header">
-            
-            
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <!--li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li>
-        </ul>
-      </li-->
-      <li class="active1" onclick="toggle_visibility('about');"><a href="#">About</a></li>
-      <li class="active1" onclick="toggle_visibility('blog');"><a href="#">Blogs</a></li>
-      <li><a href="#">Feature</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
+        <div class="container">
+            <div class="center">
+                <img id="madi" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSn8RNuW39LaasBwYSKGuJVx8p7QJwL8IkgcQtnC-WYhH5MWBLd" class="img-medium"/>
+            </div>
+            <h3>About Me</h3>
+            <div>
+                Hi, My name is Mukesh<br/>
+                I am a Programmer.
+            </div>
+            <hr/>
+            <div id="login_area">
+                <center>Loading login status...</center>
+            </div>
+            <hr/>
+            <h3>My Articles</h3>
+            <div id="articles">
+                <center>Loading articles...</center>
+            </div>
+            <div class="footer">
+            </div>
         </div>
-        <h2 class="w3-center">Automatic Slideshow</h2>
-
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="ui/1.jpg" style="width:100%">
-  <img class="mySlides" src="ui/2.jpg" style="width:100%">
- 
-</div>
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-<div id="about">
-    <p>Click the about button!</p>
-</div>
-
-<script type="text/javascript">
-
-    function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-</script>
-<div id="blog">
-    <p>Click the blog  button!</p>
-</div>
- </body>
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
+    </body>
 </html>
