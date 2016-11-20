@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     margin-top: 60px;
+    background-color:#80aaff;
 }
 
 .center {
@@ -26,7 +27,7 @@ body {
     font-family: sans-serif;
     padding-left: 20px;
     padding-right: 20px;
-    background-color:#80aaff;
+   
 }
 
 .comment {
